@@ -24,6 +24,7 @@
 **Ma réponse :**
 
 > À compléter avec mes propres mots.
+
 `let` Permet la réaffectation. Utilisez cette fonction lorsque vous savez qu'une valeur doit changer (comme un score de jeu, un compteur de boucle ou un commutateur à bascule).
 #### petit example:
 `let A = 10`
