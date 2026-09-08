@@ -10,3 +10,15 @@
 'use strict';
 
 // TODO: écris ta solution ici.
+let a = 10
+let b = 5
+
+console.log("Avant échanger leurs valeurs")
+console.log("A = " + a + "\nB = " + b)
+
+let temp = a
+a = b
+b = temp
+
+console.log("Apres échanger leurs valeurs")
+console.log("A = " + a + "\nB = " + b)
