@@ -14,7 +14,6 @@
 
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
-// TODO: écris ta solution ici.
 let nombre = "0612345678"
 if (nombre.length === 10 && typeof (nombre) == "string") {
   console.log("Numéro valid")

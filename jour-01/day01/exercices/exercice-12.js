@@ -17,7 +17,6 @@
 
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
-// TODO: écris ta solution ici.
 
 let année = 2023
 if (année % 100 != 0 && (année % 4 == 0 || année % 400 == 0)) {
