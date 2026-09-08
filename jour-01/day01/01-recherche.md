@@ -54,13 +54,20 @@ La valeur de A est désormais égale à `20`
 
 Une type de données primitifs en JavaScript
 l existe 7 types de données primitives
-1 - `string` (Chaîne de caractères): `"My name is Marouane"`
-2 - `number` (Nombre): `12 ou 144,12 ...`
-3 - `bigint` (Grand entier): nombres entiers très grands  `9007199254740991n`
-4 - `boolean` (Booléen): `true` ou `false`
-5 - `undefined` (Non défini): Valeur automatique d'une variable qui vient d'être déclarée mais à laquelle aucune valeur n'a encore été assignée
-6 - `null` (Nul): Le mot-clé `null` fait référence à la valeur primitive `null`, qui représente l'absence intentionnelle de toute valeur d'objet.
-7 - `symbol` (Symbole): Chaque fois que vous appelez la fonction Symbol(), celle-ci génère une valeur entièrement nouvelle et unique. Même si vous fournissez exactement la même description, les symboles sont fondamentalement différents.
+1 - `string` (Chaîne de caractères): `"My name is Marouane"`  
+
+2 - `number` (Nombre): `12 ou 144,12 ...`  
+
+3 - `bigint` (Grand entier): nombres entiers très grands  `9007199254740991n`  
+
+4 - `boolean` (Booléen): `true` ou `false`  
+
+5 - `undefined` (Non défini): Valeur automatique d'une variable qui vient d'être déclarée mais à laquelle aucune valeur n'a encore été assignée  
+
+6 - `null` (Nul): Le mot-clé `null` fait référence à la valeur primitive `null`, qui représente l'absence intentionnelle de toute valeur d'objet.  
+
+7 - `symbol` (Symbole): Chaque fois que vous appelez la fonction Symbol(), celle-ci génère une valeur entièrement nouvelle et unique. Même si vous fournissez exactement la même description, les symboles sont fondamentalement différents.  
+
 
 ---
 
