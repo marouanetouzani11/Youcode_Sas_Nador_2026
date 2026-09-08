@@ -40,6 +40,7 @@ La valeur de A est désormais égale à `20`
 
 `var` est le mot-clé d'origine utilisé pour déclarer des variables en JavaScript depuis la création du langage en 1995.
 `var` a une portée au niveau de la fonction : une variable déclarée avec `var` ignore les blocs `{}` et est accessible partout au sein de la fonction dans laquelle elle a été créée. Si elle n'est pas déclarée dans une fonction, elle devient globale.
+
 ---
 
 ### Question 02
