@@ -53,7 +53,8 @@ La valeur de A est désormais égale à `20`
 > À compléter avec mes propres mots.
 
 Une type de données primitifs en JavaScript
-l existe 7 types de données primitives
+l existe 7 types de données primitives  
+
 1 - `string` (Chaîne de caractères): `"My name is Marouane"`  
 
 2 - `number` (Nombre): `12 ou 144,12 ...`  
