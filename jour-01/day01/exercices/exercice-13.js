@@ -18,3 +18,14 @@
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
 // TODO: écris ta solution ici.
+
+let nombre1 = 10, nombre2 = 5
+
+let operator = '*';
+
+switch (operator) {
+  case '*':
+    let result = nombre1 * nombre2
+    console.log(result)
+    break
+}

@@ -18,3 +18,16 @@
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
 // TODO: écris ta solution ici.
+
+
+let buy = 350
+
+if (buy > 500) {
+  buy = buy * 0.9
+  console.log("Coût final: " + buy + " MAD " + "Livraison: Gratuite")
+  return
+}
+
+if (buy > 200) {
+  console.log("Coût final: " + buy + " MAD " + "Livraison: Gratuite")
+}

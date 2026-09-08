@@ -76,11 +76,13 @@ l existe 7 types de données primitives
 
 > Que signifie `typeof null` en JavaScript, et pourquoi est-ce considéré comme une erreur historique ?
 
-- [ ] J'ai recherché et compris la notion.
+- [x] J'ai recherché et compris la notion.
 
 **Ma réponse :**
 
-> À compléter avec mes propres mots.
+> À compléter avec mes propres mots.  
+
+C'est considéré comme une erreur historique parce que null n'est pas un objet, c'est une valeur primitive représentant l'absence intentionnelle de toute valeur d'objet.
 
 ---
 
@@ -100,11 +102,17 @@ l existe 7 types de données primitives
 
 > Que se passe-t-il si j'essaie de changer la valeur d'une variable déclarée avec `const` ?
 
-- [ ] J'ai recherché et compris la notion.
+- [x] J'ai recherché et compris la notion.
 
 **Ma réponse :**
 
-> À compléter avec mes propres mots.
+> À compléter avec mes propres mots.  
+
+== (égalité souple) : compare uniquement la valeur. Si les types sont différents, JavaScript essaie de les convertir automatiquement.
+Exemple : 5 == "5" donne true (le nombre 5 est égal au texte "5").
+
+=== (égalité stricte) : compare la valeur ET le type. Rien n'est converti.
+Exemple : 5 === "5" donne false (l'un est un nombre, l'autre est du texte).
 
 ---
 
@@ -112,11 +120,13 @@ l existe 7 types de données primitives
 
 > Comment JavaScript gère-t-il l'addition entre un nombre et une chaîne de caractères (ex: `5 + "5"`) ? Comment appelle-t-on ce phénomène ?
 
-- [ ] J'ai recherché et compris la notion.
+- [x] J'ai recherché et compris la notion.
 
 **Ma réponse :**
 
 > À compléter avec mes propres mots.
+
+résultat 5 + "5" donne la chaîne "55" non le nombre 10
 
 ---
 
@@ -124,11 +134,14 @@ l existe 7 types de données primitives
 
 > À quoi sert l'opérateur modulo `%` et donnez un cas d'usage classique.
 
-- [ ] J'ai recherché et compris la notion.
+- [x] J'ai recherché et compris la notion.
 
 **Ma réponse :**
 
-> À compléter avec mes propres mots.
+> À compléter avec mes propres mots.  
+
+exemple simple 10 % 3 donne 1 car 10 divisé par 3 fait 3, et il reste 1
+donc le modulo donne le reste
 
 ---
 
@@ -136,11 +149,15 @@ l existe 7 types de données primitives
 
 > Quelle est la différence entre `&&` (ET logique) et `||` (OU logique) dans une condition ?
 
-- [ ] J'ai recherché et compris la notion.
+- [x] J'ai recherché et compris la notion.
 
 **Ma réponse :**
 
-> À compléter avec mes propres mots.
+> À compléter avec mes propres mots.  
+
+&& ET logique  exige que toutes les conditions soient vraies pour valider le test. Si une seule est fausse, tout devient faux
+|| OU logique exige qu'au moins une condition soit vraie. Il devient faux uniquement si toutes les conditions sont fausses
+
 
 ---
 
@@ -148,11 +165,13 @@ l existe 7 types de données primitives
 
 > Est-il possible d'utiliser une condition `switch` à la place d'une série de `if / else if` ? Dans quel cas est-ce préférable ?
 
-- [ ] J'ai recherché et compris la notion.
+- [x] J'ai recherché et compris la notion.
 
 **Ma réponse :**
 
 > À compléter avec mes propres mots.
+
+oui, c'est tout à fait possible l'instruction switch sert précisément d'alternative à une longue chaîne de if  else if
 
 ---
 
@@ -160,14 +179,21 @@ l existe 7 types de données primitives
 
 > Qu'est-ce qu'une valeur "falsy" en JavaScript ? Citez 3 exemples.
 
-- [ ] J'ai recherché et compris la notion.
+- [x] J'ai recherché et compris la notion.
 
 **Ma réponse :**
 
 > À compléter avec mes propres mots.
 
+Une valeur "falsy" ou fausse est une valeur qui est automatiquement considérée comme false lorsqu'elle est évaluée dans un contexte booléen, comme dans une condition if.
+
+    0 le nombre zéro
+
+    "" une chaîne de caractères vide
+
+    null l'absence intentionnelle de valeur
 
 ## ✅ Validation de la recherche
 
-- [ ] Je peux expliquer au moins trois réponses sans lire mes notes.
-- [ ] J'ai noté les notions que je dois encore clarifier.
+- [x] Je peux expliquer au moins trois réponses sans lire mes notes.
+- [x] J'ai noté les notions que je dois encore clarifier.

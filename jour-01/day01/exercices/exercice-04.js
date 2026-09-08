@@ -16,3 +16,11 @@
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
 // TODO: écris ta solution ici.
+
+let val1 = 42, val2 = "YouCode", val3 = true, val4 = undefined, val5 = null
+
+console.log(val1 + " = " +  typeof (val1))
+console.log(val2 + " = " +  typeof (val2))
+console.log(val3 + " = " +  typeof (val3))
+console.log(val4 + " = " +  typeof (val4))
+console.log(val5 + " = " +  typeof (val5))
