@@ -23,7 +23,7 @@
 
 **Ma réponse :**
 
-> La différence principale est que la boucle for s'utilise quand on connaît à l'avance le nombre de répitions, tandis que la boucle while s'utilise quand la répétition dépend d'une condition dont on ne connait pas le moment exact où elle va s'arrêter.
+> La différence principale est que la boucle `for` s'utilise quand on connaît à l'avance le nombre de répitions, tandis que la boucle `while` s'utilise quand la répétition dépend d'une condition dont on ne connait pas le moment exact où elle va s'arrêter.
 
 ---
 
