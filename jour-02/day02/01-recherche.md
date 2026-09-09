@@ -31,11 +31,11 @@
 
 > À quoi sert la boucle `do...while` et en quoi diffère-t-elle de `while` ?
 
-- [ ] J'ai recherché et compris la notion.
+- [x] J'ai recherché et compris la notion.
 
 **Ma réponse :**
 
-> À compléter avec mes propres mots.
+> La boucle do...while sert à exécuter un bloc de code au moins une fois, puis à répéter cette action tant qu'une condition reste vraie.
 
 ---
 
@@ -73,7 +73,15 @@
 
 **Ma réponse :**
 
-> À compléter avec mes propres mots.
+> The continue statement terminates the execution of the current iteration in a loop and immediately jumps to the next iteration.
+``
+for (let i = 1; i <= 5; i++) {
+  if (i % 2 === 0) {
+    continue; //Si i est pair, ignorer le reste du bloc de boucle
+  }
+  console.log(i); //Cette ligne est ignorée pour les nombres pairs.
+}
+``
 
 
 
@@ -87,9 +95,9 @@
 
 **Ma réponse :**
 
-> À compléter avec mes propres mots.
+> dans une boucle « for » 
 
-dans une boucle « for » ef
+
 
 ---
 
@@ -97,11 +105,11 @@ dans une boucle « for » ef
 
 > Est-il possible de déclarer la variable d'initialisation en dehors de la boucle `for` ?
 
-- [ ] J'ai recherché et compris la notion.
+- [x] J'ai recherché et compris la notion.
 
 **Ma réponse :**
 
-> À compléter avec mes propres mots.
+>Oui Est-il possible.
 
 ---
 
@@ -109,11 +117,12 @@ dans une boucle « for » ef
 
 > Qu'est-ce qu'une boucle imbriquée (nested loop) et quand en avons-nous besoin ?
 
-- [ ] J'ai recherché et compris la notion.
+- [] J'ai recherché et compris la notion.
 
 **Ma réponse :**
 
-> À compléter avec mes propres mots.
+> Une boucle imbriquée est une boucle située à l'intérieur d'une autre boucle (boucle interne et boucle externe).
+On l'utilise notamment lorsqu'on souhaite afficher un tableau en deux dimensions.
 
 ---
 
@@ -121,11 +130,11 @@ dans une boucle « for » ef
 
 > Quel est le risque majeur en termes de performances lorsqu'on utilise de multiples boucles imbriquées ?
 
-- [ ] J'ai recherché et compris la notion.
+- [x] J'ai recherché et compris la notion.
 
 **Ma réponse :**
 
-> À compléter avec mes propres mots.
+> Le principal risque en termes de performances lié à l'utilisation de boucles imbriquées multiples est la croissance exponentielle de la complexité temporelle, qui entraîne une explosion du temps d'exécution à mesure que la taille des données d'entrée augmente.
 
 ---
 
@@ -133,14 +142,14 @@ dans une boucle « for » ef
 
 > Peut-on utiliser un `switch` à l'intérieur d'une boucle ?
 
-- [ ] J'ai recherché et compris la notion.
+- [x] J'ai recherché et compris la notion.
 
 **Ma réponse :**
 
-> À compléter avec mes propres mots.
+> Oui, il est tout à fait possible d'utiliser une instruction `switch` à l'intérieur d'une boucle 
 
 
 ## ✅ Validation de la recherche
 
-- [ ] Je peux expliquer au moins trois réponses sans lire mes notes.
-- [ ] J'ai noté les notions que je dois encore clarifier.
+- [x] Je peux expliquer au moins trois réponses sans lire mes notes.
+- [x] J'ai noté les notions que je dois encore clarifier.
