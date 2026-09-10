@@ -40,9 +40,6 @@ for (let c1 = 0; c1 <= 9; c1++){
         console.log("Code trouvé : " + codeSecret + " après " + essais + " essais");
       break
       }
-
     }
-
   }
-
 }
