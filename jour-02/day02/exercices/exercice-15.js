@@ -15,14 +15,18 @@
 'use strict';
 
 // 1. Identifie les données nécessaires.
-// 2. Écris ta solution sous cette ligne.
 
-const lines = 5;
 
-for (let i = 1; i <= lines; i++) {
-  let row = '';
-  for (let j = 1; j <= i; j++) {
-    row += '*';
+
+let n = 10
+for (let i = 1; i <= n; i++){
+
+  for (let space = n; space >= i; space--){
+    process.stdout.write(" ");
   }
-  console.log(row);
+
+  for (let star = 1; star <= i; star++) {
+    process.stdout.write("* ");
+  }
+  console.log()
 }
