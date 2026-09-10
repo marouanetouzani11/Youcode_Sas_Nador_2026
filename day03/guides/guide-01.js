@@ -8,5 +8,10 @@
  * Aide : consulte ../02-guides.md seulement si tu bloques.
  */
 'use strict';
+let nom = "Marouane Touzani"
 
-// TODO: écris ta solution ici.
+function saluer(nom) {
+  console.log(`Bonjour, ${nom} !". Testez-la`)
+}
+
+saluer(nom)
