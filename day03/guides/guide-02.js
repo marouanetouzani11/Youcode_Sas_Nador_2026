@@ -8,3 +8,8 @@
  * Aide : consulte ../02-guides.md seulement si tu bloques.
  */
 'use strict';
+
+function vaR() {
+    let hello = 10
+}
+console.log(hello)
