@@ -5,7 +5,8 @@
  * ─────────────────────────────────────────────────────────────
  *
  * 🏆 MISSION
- * Contexte : Vous devez gérer l'inventaire (sac à dos) d'un héros dans un jeu vidéo, en utilisant uniquement des fonctions pour manipuler la "mémoire" globale.
+ * Contexte : Vous devez gérer l'inventaire (sac à dos) d'un héros dans un jeu vidéo,
+ * en utilisant uniquement des fonctions pour manipuler la "mémoire" globale.
  *
  * Consignes :
  * 1. Déclarez une variable globale (hors des fonctions) or = 0.
@@ -52,4 +53,4 @@ combatGagne();
 combatGagne();
 
 console.log("--- Tentative d'achat d'une épée (100 or) ---");
-depenserOr(5);
+depenserOr(100);
