@@ -5,7 +5,9 @@
  * ─────────────────────────────────────────────────────────────
  *
  * 🎯 MISSION
- * Recréez la fonction fibonacci(n) (qui retourne le Nième terme de la suite) en utilisant la *récursivité* (la fonction s'appelle elle-même).
+ * Recréez la fonction fibonacci(n) (qui retourne le Nième terme de
+ * la suite) en utilisant la *récursivité*
+ * (la fonction s'appelle elle-même).
  * Condition d'arrêt : Si n <= 1, return n.
  *
  * 📖 Consigne détaillée : ../03-exercices.md#exercice-15
@@ -15,4 +17,14 @@
 
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
-// TODO: écris ta solution ici.
+
+function fibonacci(n) {
+    if (n <= 1) {
+      return n
+    }
+
+    return fibonacci(n - 1) + fibonacci(n - 2)
+}
+
+let fib = fibonacci(5)
+console.log(fib)

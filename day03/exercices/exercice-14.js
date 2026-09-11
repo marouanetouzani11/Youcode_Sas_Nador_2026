@@ -5,7 +5,8 @@
  * ─────────────────────────────────────────────────────────────
  *
  * 🎯 MISSION
- * Écrivez une fonction calculatrice(a, b, signe). Utilisez un switch sur signe pour appeler l'une des 4 opérations de base (+, -, *, /) que vous aurez écrites en tant que fonctions distinctes.
+ * Écrivez une fonction calculatrice(a, b, signe). Utilisez un switch sur signe pour appeler l'une des 4 opérations de base
+ * (+, -, *, /) que vous aurez écrites en tant que fonctions distinctes.
  *
  * 📖 Consigne détaillée : ../03-exercices.md#exercice-14
  * ▶️ Commande : node day03/exercices/exercice-14.js
@@ -14,4 +15,45 @@
 
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
-// TODO: écris ta solution ici.
+
+function add(a, b) {
+    return a + b
+}
+
+function Subtraction(a, b) {
+    return a - b
+}
+
+function Multiplication(a, c) {
+    return a * b
+}
+
+function div(a, b) {
+    return a / b
+}
+
+function calculatrice(a, b, signe) {
+
+    let result;
+    switch (signe) {
+        case '+':
+            result = add(a, b)
+            break
+
+        case '-':
+            result = Subtraction(a, b)
+            break
+
+        case '*':
+            result = Multiplication(a, c)
+            break
+
+        case '/':
+            result = div(a, b)
+            break
+    }
+    return result
+}
+
+let calcResult = calculatrice(12, 12, '-')
+console.log(calcResult)
