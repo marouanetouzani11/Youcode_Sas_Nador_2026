@@ -15,3 +15,20 @@
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
 // TODO: écris ta solution ici.
+
+
+let chain = "   Prix: 15.99 $  "
+
+function extrairePrixEtConvertir(chaineBrute) {
+    let n = chaineBrute.length
+    let clean = ""
+    for (let i = 0; i < n; i++){
+        const char = chaineBrute[i]
+        if (/[0-9]/.test(char)) {
+          clean += char
+      }
+    }
+    return clean
+}
+
+console.log(extrairePrixEtConvertir(chain))
