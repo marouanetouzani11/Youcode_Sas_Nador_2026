@@ -1,21 +1,25 @@
 /**
  * ─────────────────────────────────────────────────────────────
- * JOUR 04 · EXERCICE 01 · NIVEAU 1 : FONDATIONS (DÉBUTANTS)
- * DÉCLARATION ET ACCÈS
+ * JOUR 04 · EXERCICE 11 · NIVEAU 2 : CONSOLIDATION (INTERMÉDIAIRES)
+ * ÉCHANTILLONNAGE (SLICE)
  * ─────────────────────────────────────────────────────────────
  *
  * 🎯 MISSION
- * Déclarez un tableau contenant vos 5 couleurs préférées. Affichez la première et la troisième couleur.
+ * À partir d'un grand tableau de 100 éléments, utilisez .slice() pour extraire les 10 premiers (la première page).
  *
- * 📖 Consigne détaillée : ../03-exercices.md#exercice-01
- * ▶️ Commande : node day04/exercices/exercice-01.js
+ * 📖 Consigne détaillée : ../03-exercices.md#exercice-11
+ * ▶️ Commande : node day04/exercices/exercice-11.js
  */
 "use strict";
 
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
 
-let couleurs = ["Orange ", "Bleu ", "Vert", "Rouge ", "Jaune "];
+let grandtableau = [];
 
-console.log(couleurs[0]);
-console.log(couleurs[2]);
+for (let i = 0; i <= 100; i++) {
+  grandtableau.push(i);
+}
+
+let premièrepage = grandtableau.slice(1, 11);
+console.log(premièrepage);

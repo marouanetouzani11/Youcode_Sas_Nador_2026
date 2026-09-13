@@ -1,21 +1,24 @@
 /**
  * ─────────────────────────────────────────────────────────────
- * JOUR 04 · EXERCICE 01 · NIVEAU 1 : FONDATIONS (DÉBUTANTS)
- * DÉCLARATION ET ACCÈS
+ * JOUR 04 · EXERCICE 03 · NIVEAU 1 : FONDATIONS (DÉBUTANTS)
+ * SUPPRESSION
  * ─────────────────────────────────────────────────────────────
  *
  * 🎯 MISSION
- * Déclarez un tableau contenant vos 5 couleurs préférées. Affichez la première et la troisième couleur.
+ * Prenez le tableau précédent. Retirez le dernier invité (Amine) et affichez le tableau mis à jour.
  *
- * 📖 Consigne détaillée : ../03-exercices.md#exercice-01
- * ▶️ Commande : node day04/exercices/exercice-01.js
+ * 📖 Consigne détaillée : ../03-exercices.md#exercice-03
+ * ▶️ Commande : node day04/exercices/exercice-03.js
  */
 "use strict";
 
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
 
-let couleurs = ["Orange ", "Bleu ", "Vert", "Rouge ", "Jaune "];
+let invites = [];
+invites.push("Yassine", "Sara", "Amine");
+invites.pop(2);
 
-console.log(couleurs[0]);
-console.log(couleurs[2]);
+console.log(invites);
+
+

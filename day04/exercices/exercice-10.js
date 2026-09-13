@@ -1,21 +1,20 @@
 /**
  * ─────────────────────────────────────────────────────────────
- * JOUR 04 · EXERCICE 01 · NIVEAU 1 : FONDATIONS (DÉBUTANTS)
- * DÉCLARATION ET ACCÈS
+ * JOUR 04 · EXERCICE 10 · NIVEAU 2 : CONSOLIDATION (INTERMÉDIAIRES)
+ * RETIRER DES ÉLÉMENTS (SPLICE)
  * ─────────────────────────────────────────────────────────────
  *
  * 🎯 MISSION
- * Déclarez un tableau contenant vos 5 couleurs préférées. Affichez la première et la troisième couleur.
+ * Vous avez mois = ["Jan", "Fev", "MARS_EN_TROP", "Avril"]. Utilisez .splice() pour retirer "MARS_EN_TROP" sans toucher aux autres.
  *
- * 📖 Consigne détaillée : ../03-exercices.md#exercice-01
- * ▶️ Commande : node day04/exercices/exercice-01.js
+ * 📖 Consigne détaillée : ../03-exercices.md#exercice-10
+ * ▶️ Commande : node day04/exercices/exercice-10.js
  */
-"use strict";
+'use strict';
 
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
 
-let couleurs = ["Orange ", "Bleu ", "Vert", "Rouge ", "Jaune "];
-
-console.log(couleurs[0]);
-console.log(couleurs[2]);
+let mois = ["Jan", "Fev", "MARS_EN_TROP", "Avril"];
+mois.splice(2, 2)
+console.log(mois);

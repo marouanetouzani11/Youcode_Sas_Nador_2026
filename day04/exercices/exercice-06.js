@@ -1,21 +1,21 @@
 /**
  * ─────────────────────────────────────────────────────────────
- * JOUR 04 · EXERCICE 01 · NIVEAU 1 : FONDATIONS (DÉBUTANTS)
- * DÉCLARATION ET ACCÈS
+ * JOUR 04 · EXERCICE 06 · NIVEAU 1 : FONDATIONS (DÉBUTANTS)
+ * FUSION DE TABLEAUX
  * ─────────────────────────────────────────────────────────────
  *
  * 🎯 MISSION
- * Déclarez un tableau contenant vos 5 couleurs préférées. Affichez la première et la troisième couleur.
+ * Vous avez groupe1 = ["A", "B"] et groupe2 = ["C", "D"]. Fusionnez-les pour obtenir ["A", "B", "C", "D"].
  *
- * 📖 Consigne détaillée : ../03-exercices.md#exercice-01
- * ▶️ Commande : node day04/exercices/exercice-01.js
+ * 📖 Consigne détaillée : ../03-exercices.md#exercice-06
+ * ▶️ Commande : node day04/exercices/exercice-06.js
  */
 "use strict";
 
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
 
-let couleurs = ["Orange ", "Bleu ", "Vert", "Rouge ", "Jaune "];
+let groupe1 = ["A", "B"], groupe2 = ["C", "D"];
+let merged = groupe1.concat(groupe2);
 
-console.log(couleurs[0]);
-console.log(couleurs[2]);
+console.log(merged);
