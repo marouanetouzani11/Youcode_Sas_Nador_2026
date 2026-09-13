@@ -18,7 +18,6 @@
 let arr = [3, 1, 2];
 
 let hello = arr.shift();
-console.log(hello);
 
 let finnalArr = arr.concat()
 finnalArr.unshift(hello)

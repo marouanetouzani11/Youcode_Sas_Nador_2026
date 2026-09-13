@@ -10,8 +10,23 @@
  * 📖 Consigne détaillée : ../03-exercices.md#exercice-17
  * ▶️ Commande : node day04/exercices/exercice-17.js
  */
-'use strict';
+"use strict";
 
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
-// TODO: écris ta solution ici.
+
+let mots = ["pomme", "banane", "pomme", "orange", "banane", "pomme"];
+apparaît(mots);
+
+function apparaît(arr) {
+  for (let i = 0; i < arr.length; i++) {
+    let count = 1;
+    for (let j = 0; j < arr.length; j++) {
+      if (arr[i] == arr[j]) {
+        count++;
+      }
+    }
+    count--;
+    console.log(arr[i] + ": " + count);
+  }
+}
