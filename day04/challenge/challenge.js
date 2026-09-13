@@ -19,15 +19,16 @@
 "use strict";
 
 // Découpe d'abord le problème en petites étapes.
-// TODO: écris ta solution ici.
 
-let Panier = []
-    Panier.push(ajouterAuPanier(123))
-console.log();
+let panier = [101, 105, 101, 102];
+ajouterAuPanier(panier)
 
 function ajouterAuPanier(id) {
-  let panier = [];
-
-  return panier.push(id);
+ retirerDuPanier(id);
 }
 
+function retirerDuPanier(id){
+    let panier = id
+    
+    
+}

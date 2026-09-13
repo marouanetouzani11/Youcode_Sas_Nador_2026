@@ -16,17 +16,28 @@
 // 2. Écris ta solution sous cette ligne.
 
 let mots = ["pomme", "banane", "pomme", "orange", "banane", "pomme"];
+
 apparaît(mots);
 
 function apparaît(arr) {
+  let alreadySeen = [];
+
   for (let i = 0; i < arr.length; i++) {
-    let count = 1;
+    let currentWord = arr[i];
+
+    if (alreadySeen.includes(currentWord)) {
+      continue;
+    }
+
+    let count = 0;
     for (let j = 0; j < arr.length; j++) {
-      if (arr[i] == arr[j]) {
+      if (arr[j] === currentWord) {
         count++;
       }
     }
-    count--;
-    console.log(arr[i] + ": " + count);
+
+    alreadySeen.push(currentWord);
+
+    console.log(`${currentWord} : ${count}`);
   }
 }
