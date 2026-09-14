@@ -20,27 +20,53 @@
 
 // Découpe d'abord le problème en petites étapes.
 
-let panier = [101, 105, 101, 102]
+let panier = [101, 105, 101, 102];
 
-function ajouterAuPanier(id){
-    panier.push(id)
+function ajouterAuPanier(id) {
+  panier.push(id);
 }
 
-function retirerDuPanier(id){
-    let NewArr = []
+function retirerDuPanier(id) {
+  let NewArr = [];
 
-    for (let i = 0; i < panier.length; i++){
-        let item = panier[i]
+  for (let i = 0; i < panier.length; i++) {
+    let item = panier[i];
 
-        if (item !== id){
-            NewArr.push(item)
-        }
+    if (item !== id) {
+      NewArr.push(item);
     }
+  }
 
-    return NewArr
+  return NewArr;
+}
+// [101, 105, 101, 102]
+function afficherQuantites() {
+  let seen = [];
+
+  for (let i = 0; i < panier.length; i++) {
+    let current = panier[i];
+
+    if (!seen.includes(current)) {
+      let count = 0;
+
+      for (let j = 0; j < panier.length; j++) {
+        if (panier[j] === current) {
+          count++;
+        }
+      }
+
+      seen.push(current);
+      console.log(current + " : " + count);
+    }
+  }
 }
 
-ajouterAuPanier(1234)
-
-console.log(retirerDuPanier(101))
+ajouterAuPanier(134);
+ajouterAuPanier(14);
+ajouterAuPanier(234);
+ajouterAuPanier(1234);
+ajouterAuPanier(124);
+ajouterAuPanier(1234);
+console.log(retirerDuPanier(132))
+console.log(afficherQuantites());
 
