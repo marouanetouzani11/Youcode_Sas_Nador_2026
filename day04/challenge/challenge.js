@@ -20,15 +20,27 @@
 
 // Découpe d'abord le problème en petites étapes.
 
-let panier = [101, 105, 101, 102];
-ajouterAuPanier(panier)
+let panier = [101, 105, 101, 102]
 
-function ajouterAuPanier(id) {
- retirerDuPanier(id);
+function ajouterAuPanier(id){
+    panier.push(id)
 }
 
 function retirerDuPanier(id){
-    let panier = id
-    
-    
+    let NewArr = []
+
+    for (let i = 0; i < panier.length; i++){
+        let item = panier[i]
+
+        if (item !== id){
+            NewArr.push(item)
+        }
+    }
+
+    return NewArr
 }
+
+ajouterAuPanier(1234)
+
+console.log(retirerDuPanier(101))
+
