@@ -20,24 +20,24 @@ let mots = ["pomme", "banane", "pomme", "orange", "banane", "pomme"];
 apparaît(mots);
 
 function apparaît(arr) {
-  let alreadySeen = [];
+  let seen = [];
 
   for (let i = 0; i < arr.length; i++) {
-    let currentWord = arr[i];
+    let current = arr[i];
 
-    if (alreadySeen.includes(currentWord)) {
-      continue;
-    }
+    if (!seen.includes(current)) {
+      let count = 0;
 
-    let count = 0;
-    for (let j = 0; j < arr.length; j++) {
-      if (arr[j] === currentWord) {
-        count++;
+      for (let j = 0; j < arr.length; j++) {
+        if (arr[j] === current) {
+          count++;
+        }
       }
+
+      seen.push(current);
+      console.log(current + " : " + count);
     }
-
-    alreadySeen.push(currentWord);
-
-    console.log(`${currentWord} : ${count}`);
   }
 }
+
+console.log(apparaît(mots))
