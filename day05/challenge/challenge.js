@@ -20,7 +20,33 @@
  * 📖 Consigne détaillée : ./README.md
  * ▶️ Commande : node day05/challenge/challenge.js
  */
-'use strict';
+"use strict";
 
 // Découpe d'abord le problème en petites étapes.
-// TODO: écris ta solution ici.
+let interdits = ["nOob", "idiot", "nul"];
+let text =
+  "Ce joueur est vraiment nul c'est un pur noob qui joue comme un idiot";
+
+let arr = text.split(" ");
+
+function filtrerMessage(message) {
+  let hold = [];
+  let i = 0;
+  while (message[i] !== undefined) {
+    if (
+      message[i].toLowerCase() == interdits[0].toLowerCase() ||
+      message[i].toLowerCase() == interdits[1].toLowerCase() ||
+      message[i].toLowerCase() == interdits[2].toLowerCase()
+    ) {
+      for (let j = 0; j < message[i].length; j++) {
+        message[i] = message[i].replace(message[i][j], "*");
+      }
+    }
+    hold.push(message[i]);
+    i++;
+  }
+
+  return hold;
+}
+let allo = filtrerMessage(arr).join(" ");
+console.log(allo);
