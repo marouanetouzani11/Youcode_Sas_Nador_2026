@@ -52,7 +52,7 @@ console.log(utilisateurs)
 
 
 function trouverParEmail(email) {
-	console.log(email);
+	
 	
   let hold;
   for (let i = 0; i < utilisateurs.length; i++) {
@@ -78,9 +78,17 @@ function supprimerParId(id) {
   }
   return false;
 }
+
+function afficherAnnuaire(){
 console.log("\n\n\n")
-console.log(supprimerParId(5));
+console.log("l'e-mail que vous recherchez est: ");
+console.log("\n")
+console.log(trouverParEmail("Hicham@gmail.com"))
+console.log("\n\n\n")
+console.log(supprimerParId(5))
 console.log("\n\n\n")
 console.log("le résultat final\n")
-
 console.log(utilisateurs)
+}
+
+afficherAnnuaire()
